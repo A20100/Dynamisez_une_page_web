@@ -1,0 +1,11 @@
+{
+  "name": "dynamisez_une_page_web_beaudet_alexis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:./css/main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
