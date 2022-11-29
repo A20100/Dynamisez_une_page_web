@@ -1,10 +1,22 @@
-$font-family-text: 'Roboto' sans-serif;
+$font-family-text: 'Roboto', sans-serif;
 $font-family-title: 'Shrikhand', sans-serif;
+$font-size-text: 1.6rem;
+$font-size-title: 2rem;
+$font-weight-text: 400;
+$font-weight-title: 600;
+$line-height-text: 1.5rem;
+$line-height-title: 2rem;
 
 body {
     font-family: $font-family-text;
+    font-size: $font-size-text;
+    font-weight: $font-weight-text;
+    line-height: $line-height-text;
 }
 
 h1 {
     font-family: $font-family-title;
+    font-size: $font-size-title;
+    font-weight: $font-weight-title;
+    line-height: $line-height-title;
 }
