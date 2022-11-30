@@ -4,11 +4,17 @@ a {
 }
 
 body {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 h1 {
   font-family: "Shrikhand", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
 }
 
 button {
@@ -16,6 +22,25 @@ button {
 }
 button__search {
   padding: 20px;
+}
+.card__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 95%;
+  border-radius: 18px;
+  box-shadow: 0 0 16px gray;
+  height: 200px;
+}
+.card__picture {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 120px;
 }
 .header__logo {
   display: flex;
@@ -25,4 +50,8 @@ button__search {
 footer {
   background-color: rgb(37, 37, 37);
   color: white;
+}
+
+body {
+  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */
