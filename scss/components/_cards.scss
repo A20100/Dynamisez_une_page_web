@@ -1,6 +1,13 @@
+#restaurants {
+    padding: 60px 0;
+    background-color: beige;
+}
+
 .card__wrapper {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card {
@@ -15,7 +22,13 @@
         width: 100%;
         height: 20rem;
     }
-    &__text {
-
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
     }
+}
+
+.card:hover {
+    transform: scale(1.01);
 }
