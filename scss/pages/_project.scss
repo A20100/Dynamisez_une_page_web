@@ -1,0 +1,11 @@
+.location {
+    @include flex;
+    background-color: $color-bg2;
+    padding: 10px 0;
+}
+
+.search {
+    @include flex;
+    background-color: $color-bg2;
+    padding: 60px 20px;
+}

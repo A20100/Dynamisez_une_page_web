@@ -21,7 +21,7 @@ body {
   font-size: 1.1rem;
 }
 
-h1 {
+.header__logo p, .menu__title h1, footer h2 {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.6rem;
 }
@@ -46,7 +46,7 @@ button__search {
 }
 
 .card__wrapper {
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,4 +92,22 @@ footer h2 {
 }
 footer .footer__icon {
   padding-right: 0.5rem;
+}
+
+.location {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(207, 188, 188);
+  padding: 10px 0;
+}
+
+.search {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(207, 188, 188);
+  padding: 60px 20px;
 }/*# sourceMappingURL=main.css.map */
