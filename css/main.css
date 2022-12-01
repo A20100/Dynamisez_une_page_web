@@ -35,14 +35,23 @@ main h2 {
 }
 
 button {
-  background-color: #FF79DA;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC, #99E2D0);
 }
-button__search {
+button.btn {
   padding: 20px;
+  border-radius: 18px;
+  border: none;
+  color: #fff;
 }
+
+button:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
 #restaurants {
   padding: 60px 0;
-  background-color: rgb(207, 188, 188);
+  background-color: rgb(241, 229, 229);
 }
 
 .card__wrapper {
@@ -63,6 +72,7 @@ button__search {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
   object-fit: cover;
+  object-position: center;
   width: 100%;
   height: 20rem;
 }
@@ -83,7 +93,7 @@ button__search {
 }
 footer {
   background-color: rgb(37, 37, 37);
-  color: white;
+  color: #fff;
   padding: 1rem 0 2rem;
 }
 footer h2 {
@@ -98,7 +108,7 @@ footer .footer__icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(207, 188, 188);
+  background-color: rgb(241, 229, 229);
   padding: 10px 0;
 }
 
@@ -107,8 +117,67 @@ footer .footer__icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(207, 188, 188);
+  background-color: rgb(241, 229, 229);
   padding: 60px 20px;
+}
+
+.function__button {
+  background-color: rgb(241, 229, 229);
+  border-radius: 18px;
+  padding: 20px;
+  margin: 2rem 0;
+}
+.function__number {
+  border-radius: 18px;
+  background-color: rgb(53, 53, 226);
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.menu__container img {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  top: 70px;
+}
+.menu__wrapper {
+  margin-top: 260px;
+  position: relative;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background-color: rgb(241, 229, 229);
+  padding: 30px 10px;
+}
+.menu__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu__category h2 {
+  padding: 15px 0;
+}
+.menu__category h2 > span {
+  border-bottom: solid 2px;
+}
+.menu__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #fff;
+  border-radius: 18px;
+}
+.menu__text {
+  padding-left: 25px;
+}
+.menu__btn {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */

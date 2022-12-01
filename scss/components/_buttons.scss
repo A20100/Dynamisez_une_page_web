@@ -1,9 +1,14 @@
 button {
-background-color: $color-secondary;
-    &__search {
+background-image: linear-gradient(to bottom right, $color-secondary, $color-primary, $color-tertiary);
+    &.btn {
         padding: 20px;
+        border-radius: $border-radius;
+        border: none;
+        color: $color-text2;
     }
-    &:hover {
-        
-    }
+}
+button:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    
 }

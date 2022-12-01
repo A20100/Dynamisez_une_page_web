@@ -9,3 +9,18 @@
     background-color: $color-bg2;
     padding: 60px 20px;
 }
+
+.function {
+    &__button {
+        background-color: $color-bg2;
+        border-radius: $border-radius;
+        padding: 20px;
+        margin: 2rem 0;
+    }
+    &__number {
+        border-radius: $border-radius;
+        background-color: rgb(53, 53, 226);
+        color: $color-text2;
+        padding: 0.5rem;
+    }
+}

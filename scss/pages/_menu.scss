@@ -1,0 +1,39 @@
+.menu {
+    &__container img {
+        position: absolute;
+        z-index: -1;
+        object-fit: cover;
+        width: 100%;
+        top: 70px;
+
+    }
+    &__wrapper {
+        margin-top: 260px;
+        position: relative;
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+        background-color: $color-bg2;
+        padding: 30px 10px;
+    }
+    &__title {
+        @include flex-menu;
+    }
+    &__category h2 {
+        padding: 15px 0;
+        > span {
+            border-bottom: solid 2px;
+        }
+    }
+    &__card {
+        @include flex-menu;
+        background-color: $color-bg1;
+        border-radius: $border-radius;
+    }
+    &__text {
+        padding-left: 25px;
+    }
+    &__btn {
+        @include flex;
+        padding-top: 15px;
+    }
+}

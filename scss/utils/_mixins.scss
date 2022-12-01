@@ -4,3 +4,10 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin flex-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
