@@ -30,6 +30,10 @@ main {
   line-height: 5px;
 }
 
+main h2 {
+  padding-left: 2rem;
+}
+
 button {
   background-color: #FF79DA;
 }
@@ -38,7 +42,7 @@ button__search {
 }
 #restaurants {
   padding: 60px 0;
-  background-color: beige;
+  background-color: rgb(207, 188, 188);
 }
 
 .card__wrapper {
@@ -50,6 +54,7 @@ button__search {
 
 .card {
   width: 95%;
+  background-color: #fff;
   border-radius: 18px;
   box-shadow: 0 0 16px gray;
   height: 25rem;

@@ -1,6 +1,6 @@
 #restaurants {
     padding: 60px 0;
-    background-color: beige;
+    background-color: $color-bg2;
 }
 
 .card__wrapper {
@@ -12,6 +12,7 @@
 
 .card {
     width: 95%;
+    background-color: $color-bg1;
     border-radius: $border-radius;
     box-shadow: 0 0 16px gray;
     height: 25rem;
