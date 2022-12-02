@@ -1,9 +1,10 @@
 .header__logo {
-    display: flex;
     align-items: center;
-    justify-content:center;
-    > span {
-
-
+    > p {
+        margin: 15px 0 10px;
+        text-align: center;
+    }
+    span {
+        text-align: start;
     }
 }

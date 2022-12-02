@@ -13,15 +13,19 @@
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
         background-color: $color-bg2;
-        padding: 30px 10px;
+        padding: 35px 15px;
     }
     &__title {
         @include flex-menu;
+        span {
+            padding-right: 30px;
+        }
     }
     &__category h2 {
         padding: 15px 0;
         > span {
-            border-bottom: solid 2px;
+            padding: 5px 0;
+            border-bottom: solid 3px $color-tertiary;
         }
     }
     &__card {
@@ -32,8 +36,17 @@
     &__text {
         padding-left: 25px;
     }
+    &__price {
+        padding-right: 40px;
+    }
+    &__validation {
+        display: none;
+    }
     &__btn {
         @include flex;
         padding-top: 15px;
+        button {
+            padding: 15px 60px;
+        }
     }
 }

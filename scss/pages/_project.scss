@@ -3,20 +3,31 @@
     background-color: (darken($color: $color-bg2, $amount: +5));
     padding: 10px 0;
     box-shadow: 0px -3px 5px #d9b6b6;
+    color: (lighten($color: $color-text1, $amount: +10));
+    > p {
+        margin: 5px;
+    }
+    &__icon {
+        padding-right: 10px;
+    }
 }
 
 .search {
     @include flex;
     background-color: $color-bg2;
-    padding: 60px 20px;
+    padding: 20px;
     text-align: center;
+    > button {
+        margin: 20px;
+    }
 }
 
 .function {
+    padding: 20px 0 30px;
     &__button {
         background-color: $color-bg2;
         border-radius: $border-radius;
-        padding: 20px;
+        padding: 10px;
         margin: 2rem 1rem;
     }
     &__button:hover {
@@ -35,6 +46,6 @@
 }
 
 .i-bg {
-    padding-right: 30px;
+    padding: 0 15px;
     color: $color-tertiary;
 }

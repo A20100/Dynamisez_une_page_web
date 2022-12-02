@@ -1,7 +1,7 @@
 button {
 border: none;
     &.btn {
-        padding: 20px;
+        padding: 15px;
         border-radius: $border-radius;
         color: $color-text2;
         background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);

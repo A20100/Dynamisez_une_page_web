@@ -1,25 +1,47 @@
 $font-family-text: 'Roboto', sans-serif;
 $font-family-title: 'Shrikhand', sans-serif;
 $font-size-text: 1.1rem;
-$font-size-title: 1.6rem;
+$font-size-title: 1.7rem;
+$font-size-footer: 1rem;
+
 
 body {
     font-family: $font-family-text;
     font-size: $font-size-text;
 }
 
-.header__logo p, .menu__title h1, footer h2 {
+.header__logo p, .menu__title h1 {
     font-family: $font-family-title;
     font-size: $font-size-title;
+}
+
+footer {
+    font-size: $font-size-footer;
+    h2 {
+    font-family: $font-family-title;
+    font-weight: 300;}
 }
 
 main {
     line-height: 10px;
     > .search {
         line-height: 20px;
+        p {
+            font-weight: 200;
+        }
     }
 }
 
 main h2 {
     padding-left: 2rem;
+}
+
+.menu__category h2 {
+    font-weight: 200;
+    font-size: $font-size-text;
+
+}
+
+button {
+    font-weight: 600;
 }
