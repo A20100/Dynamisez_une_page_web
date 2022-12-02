@@ -1,14 +1,22 @@
 button {
-background-image: linear-gradient(to bottom right, $color-secondary, $color-primary, $color-tertiary);
+border: none;
     &.btn {
         padding: 20px;
         border-radius: $border-radius;
-        border: none;
         color: $color-text2;
+        background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        &__heart {
+            font-size: 25px;
+            background-color: inherit;
+        }
     }
 }
+
 button:hover {
     transform: scale(1.01);
-    cursor: pointer;
-    
+    cursor: pointer;  
+}
+
+.btn__heart:active {
+    background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
 }
