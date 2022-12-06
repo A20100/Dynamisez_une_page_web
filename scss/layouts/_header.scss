@@ -1,10 +1,13 @@
 .header__logo {
+    display: flex;
+    position: relative;
+    justify-content: center;
     align-items: center;
     > p {
         margin: 15px 0 10px;
-        text-align: center;
     }
     span {
-        text-align: start;
+        position: absolute;
+        left: 5%;
     }
 }

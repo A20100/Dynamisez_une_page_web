@@ -2,7 +2,7 @@
     @include flex;
     background-color: (darken($color: $color-bg2, $amount: +5));
     padding: 10px 0;
-    box-shadow: 0px -3px 5px #d9b6b6;
+    box-shadow: inset 0px 4px 3px #d9b6b6;
     color: (lighten($color: $color-text1, $amount: +10));
     > p {
         margin: 5px;
@@ -33,14 +33,14 @@
     &__button:hover {
         background-color: aliceblue;
         .i-bg {
-            color: rgb(64, 64, 230);
+            color: $color-primary;
         }
     }
     &__number {
         border-radius: $border-radius;
-        background-color: rgb(64, 64, 230);
+        background-color: $color-primary;
         color: $color-text2;
-        padding: 8px 12px;
+        padding: 6px 12px;
         margin: 0 15px 0 -35px;
     }
 }
