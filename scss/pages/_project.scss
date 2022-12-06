@@ -40,7 +40,7 @@
         margin: 2rem 1rem;
     }
     &__button:hover {
-        background-color: aliceblue;
+        background-color: lighten($color-secondary, $amount: +20);
         .i-bg {
             color: $color-primary;
         }

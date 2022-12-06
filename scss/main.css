@@ -142,6 +142,11 @@ button:hover {
   color: #278870;
   padding: 0.7rem;
 }
+@media screen and (min-width: 992px) {
+  .card__new {
+    right: initial;
+  }
+}
 .card__content {
   display: flex;
   justify-content: space-between;
@@ -262,7 +267,7 @@ footer .footer__icon {
   margin: 2rem 1rem;
 }
 .function__button:hover {
-  background-color: aliceblue;
+  background-color: #ffdff6;
 }
 .function__button:hover .i-bg {
   color: #9356DC;

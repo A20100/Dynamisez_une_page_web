@@ -31,6 +31,9 @@
         background-color: $color-tertiary;
         color: darken($color: $color-tertiary, $amount: +40);
         padding: 0.7rem;
+        @include desktop-only {
+            right: initial;
+        }
     }
     &__content {
         display: flex;
