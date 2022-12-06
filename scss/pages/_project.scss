@@ -14,6 +14,9 @@
 
 .search {
     @include flex;
+    @include desktop-only {
+        flex-direction: column;
+    }
     background-color: $color-bg2;
     padding: 20px;
     text-align: center;
@@ -24,6 +27,12 @@
 
 .function {
     padding: 20px 0 30px;
+    &__wrapper {
+        @include desktop-only {
+            @include flex;
+            justify-content: space-around;
+        }
+    }
     &__button {
         background-color: $color-bg2;
         border-radius: $border-radius;

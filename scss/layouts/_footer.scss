@@ -1,4 +1,10 @@
 footer {
+    ul { 
+        @include desktop-only {
+        @include flex;
+        justify-content: space-around;
+        }
+    }
     background-color: $color-footer;
     color: $color-text2;
     padding: 1rem 0 2rem;
