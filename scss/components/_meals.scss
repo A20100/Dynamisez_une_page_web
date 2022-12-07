@@ -1,0 +1,20 @@
+.menu__card:hover {
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 5000ms ease-in-out;
+    .menu__validation {
+        display: initial;
+        background-color: $color-tertiary;
+        padding: 30px;
+        border-top-right-radius: inherit;
+        border-bottom-right-radius: inherit;
+        span {
+            background-color: white;
+            color: $color-tertiary;
+            font-size: 25px;
+            border: none;
+        }
+        
+
+    }
+}

@@ -53,6 +53,10 @@ main h2 {
   font-size: 1.1rem;
 }
 
+.menu__price {
+  font-weight: 700;
+}
+
 button {
   font-weight: 600;
 }
@@ -70,6 +74,19 @@ button.btn {
 button:hover {
   transform: scale(1.01);
   cursor: pointer;
+}
+
+.fa-heart {
+  font-size: 30px;
+  color: transparent;
+  background-color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+.fa-heart:active, .fa-heart:hover {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0;
 }
 
 .heart {
@@ -151,8 +168,23 @@ button:hover {
   position: relative;
 }
 
-.card:hover {
-  transform: scale(1.01);
+.menu__card:hover {
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 5000ms ease-in-out;
+}
+.menu__card:hover .menu__validation {
+  display: initial;
+  background-color: #99E2D0;
+  padding: 30px;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.menu__card:hover .menu__validation span {
+  background-color: white;
+  color: #99E2D0;
+  font-size: 25px;
+  border: none;
 }
 
 .header__logo {
@@ -167,6 +199,7 @@ button:hover {
 .header__logo span {
   position: absolute;
   left: 5%;
+  top: 40%;
 }
 
 footer {
