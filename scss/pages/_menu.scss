@@ -17,12 +17,12 @@
     }
     &__title {
         @include flex-menu;
-        position: relative;
-        span {
+        align-items: center;
+        button {
             padding-right: 30px;
         }
     }
-    &__category h2 {
+    &__organizer h2 {
         padding: 15px 0;
         > span {
             padding: 5px 0;
@@ -33,6 +33,8 @@
         @include flex-menu;
         background-color: $color-bg1;
         border-radius: $border-radius;
+        box-shadow: 0 5px 9px gray;
+        margin-bottom: 20px;
     }
     &__text {
         padding-left: 25px;
@@ -48,6 +50,24 @@
         padding-top: 15px;
         button {
             padding: 15px 60px;
+        }
+    }
+}
+@include tablet-only {
+    .menu {
+        &__title {
+            @include flex;
+            button {
+                padding-left: 50px;
+            }
+        }
+        &__organizer {
+            display: flex;
+            justify-content: space-around;
+        }
+        &__category {
+            display: flex;
+            flex-direction: column;
         }
     }
 }

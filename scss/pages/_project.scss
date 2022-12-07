@@ -2,7 +2,7 @@
     @include flex;
     background-color: (darken($color: $color-bg2, $amount: +5));
     padding: 10px 0;
-    box-shadow: inset 0px 4px 3px #d9b6b6;
+    box-shadow: inset 0px 4px 3px #999;
     color: (lighten($color: $color-text1, $amount: +10));
     > p {
         margin: 5px;
@@ -31,6 +31,9 @@
         @include desktop-only {
             @include flex;
             justify-content: space-around;
+            p {
+                padding-right: 20px;
+            }
         }
     }
     &__button {

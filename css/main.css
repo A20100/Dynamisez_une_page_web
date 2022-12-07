@@ -113,7 +113,7 @@ button:hover {
 
 #restaurants {
   padding: 60px 0;
-  background-color: #f6f6f6;
+  background-color: #f3f3f3;
 }
 
 .card__wrapper {
@@ -172,6 +172,10 @@ button:hover {
   cursor: pointer;
   transform: scale(1);
   transition: transform 5000ms ease-in-out;
+}
+.menu__card:hover .menu__text {
+  transform: translateX(110%);
+  transition: transform 280ms ease-out 50ms;
 }
 .menu__card:hover .menu__validation {
   display: initial;
@@ -233,9 +237,9 @@ footer .footer__icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e9e9e9;
+  background-color: #e6e6e6;
   padding: 10px 0;
-  box-shadow: inset 0px 4px 3px #d9b6b6;
+  box-shadow: inset 0px 4px 3px #999;
   color: #1a1a1a;
 }
 @media screen and (min-width: 992px) {
@@ -255,7 +259,7 @@ footer .footer__icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f6f6f6;
+  background-color: #f3f3f3;
   padding: 20px;
   text-align: center;
 }
@@ -290,8 +294,13 @@ footer .footer__icon {
     flex-direction: row;
   }
 }
+@media screen and (min-width: 992px) {
+  .function__wrapper p {
+    padding-right: 20px;
+  }
+}
 .function__button {
-  background-color: #f6f6f6;
+  background-color: #f3f3f3;
   border-radius: 25px;
   padding: 10px;
   margin: 2rem 1rem;
@@ -327,7 +336,7 @@ footer .footer__icon {
   position: relative;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  background-color: #f6f6f6;
+  background-color: #f3f3f3;
   padding: 35px 15px;
 }
 .menu__title {
@@ -335,15 +344,15 @@ footer .footer__icon {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  position: relative;
+  align-items: center;
 }
-.menu__title span {
+.menu__title button {
   padding-right: 30px;
 }
-.menu__category h2 {
+.menu__organizer h2 {
   padding: 15px 0;
 }
-.menu__category h2 > span {
+.menu__organizer h2 > span {
   padding: 5px 0;
   border-bottom: solid 3px #99E2D0;
 }
@@ -354,6 +363,8 @@ footer .footer__icon {
   align-items: flex-end;
   background-color: #fff;
   border-radius: 25px;
+  box-shadow: 0 5px 9px gray;
+  margin-bottom: 20px;
 }
 .menu__text {
   padding-left: 25px;
@@ -378,6 +389,37 @@ footer .footer__icon {
 }
 .menu__btn button {
   padding: 15px 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__title {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  .menu__title {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__title button {
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__organizer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__category {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
