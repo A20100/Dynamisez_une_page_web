@@ -171,22 +171,6 @@ button:hover {
   position: relative;
 }
 
-.menu__card:hover {
-  cursor: pointer;
-}
-.menu__card:hover .menu__validation {
-  display: initial;
-  background-color: #99E2D0;
-  padding: 30px;
-  border-top-right-radius: inherit;
-  border-bottom-right-radius: inherit;
-}
-.menu__card:hover .menu__validation span {
-  color: white;
-  font-size: 25px;
-  border: none;
-}
-
 .header__logo {
   display: flex;
   position: relative;
@@ -317,7 +301,7 @@ footer .footer__icon {
 
 .i-bg {
   padding: 0 15px;
-  color: #99E2D0;
+  color: #8c8c8c;
 }
 
 .menu__container img {
