@@ -64,6 +64,7 @@
         &__organizer {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
         }
         &__category {
             display: flex;

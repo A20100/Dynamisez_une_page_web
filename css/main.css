@@ -170,12 +170,6 @@ button:hover {
 
 .menu__card:hover {
   cursor: pointer;
-  transform: scale(1);
-  transition: transform 5000ms ease-in-out;
-}
-.menu__card:hover .menu__text {
-  transform: translateX(110%);
-  transition: transform 280ms ease-out 50ms;
 }
 .menu__card:hover .menu__validation {
   display: initial;
@@ -185,8 +179,7 @@ button:hover {
   border-bottom-right-radius: inherit;
 }
 .menu__card:hover .menu__validation span {
-  background-color: white;
-  color: #99E2D0;
+  color: white;
   font-size: 25px;
   border: none;
 }
@@ -413,6 +406,7 @@ footer .footer__icon {
   .menu__organizer {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 768px) {
