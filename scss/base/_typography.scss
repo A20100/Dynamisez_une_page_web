@@ -49,3 +49,10 @@ main h2 {
 button {
     font-weight: 600;
 }
+
+@include desktop-only {
+    .card h3, .card p {
+        line-height: 20px;
+        margin: 5px 0;
+    }
+}

@@ -41,6 +41,8 @@
         border-radius: $border-radius;
         padding: 10px;
         margin: 2rem 1rem;
+        @include desktop-only {
+            padding: 0;}
     }
     &__button:hover {
         background-color: lighten($color-secondary, $amount: +20);

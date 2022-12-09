@@ -61,6 +61,12 @@ button {
   font-weight: 600;
 }
 
+@media screen and (min-width: 992px) {
+  .card h3, .card p {
+    line-height: 20px;
+    margin: 5px 0;
+  }
+}
 button {
   border: none;
 }
@@ -169,6 +175,24 @@ button:hover {
   justify-content: space-between;
   padding: 0 1rem;
   position: relative;
+}
+
+.menu__card:hover {
+  cursor: pointer;
+}
+.menu__card:hover .menu__validation {
+  display: initial;
+  transition: transform 5000ms ease-in-out;
+  background-color: #99E2D0;
+  padding: 30px;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.menu__card:hover .menu__validation span {
+  color: white;
+  font-size: 25px;
+  transform: rotate(360deg);
+  transition: transform 5000ms ease-in-out;
 }
 
 .header__logo {
@@ -284,6 +308,11 @@ footer .footer__icon {
   border-radius: 25px;
   padding: 10px;
   margin: 2rem 1rem;
+}
+@media screen and (min-width: 992px) {
+  .function__button {
+    padding: 0;
+  }
 }
 .function__button:hover {
   background-color: #ffdff6;
