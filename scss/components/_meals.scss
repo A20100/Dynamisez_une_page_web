@@ -1,19 +1,25 @@
+.menu__validation {
+    width: 0;
+    background-color: $color-tertiary;
+    span {
+        padding: 1.5rem;
+        color: white;
+        font-size: 2rem;
+        transform: rotate(0turn);
+        transition: transform 0.5s;
+    }
+}
+
 .menu__card:hover {
     cursor: pointer;
+    .menu__card__block {
+        width: 80%;
+    }
     .menu__validation {
-        display: initial;
-        transition: transform 5000ms ease-in-out;
-        background-color: $color-tertiary;
-        padding: 30px;
-        border-top-right-radius: inherit;
-        border-bottom-right-radius: inherit;
+        width: 20%;
+        transition: width 0.5s;
         span {
-            color: white;
-            font-size: 25px;
-            transform: rotate(360deg);
-            transition: transform 5000ms ease-in-out;
+            transform: rotate(-1turn);
         }
-        
-
     }
 }

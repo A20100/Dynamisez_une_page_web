@@ -15,7 +15,8 @@
     height: 20rem;
     margin: 15px 0;
     @include desktop-only {
-        margin: 10px 30px;
+        margin: 10px 17px;
+        height: 20rem;
     }
     &__picture {
         border-top-left-radius: $border-radius;

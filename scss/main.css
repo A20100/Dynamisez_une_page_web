@@ -64,7 +64,7 @@ button {
 @media screen and (min-width: 992px) {
   .card h3, .card p {
     line-height: 20px;
-    margin: 5px 0;
+    margin: 10px 0;
   }
 }
 button {
@@ -139,13 +139,14 @@ button:hover {
   width: 90%;
   background-color: #fff;
   border-radius: 25px;
-  box-shadow: 0 5px 9px gray;
+  box-shadow: 0 5px 9px rgb(204, 204, 204);
   height: 20rem;
   margin: 15px 0;
 }
 @media screen and (min-width: 992px) {
   .card {
-    margin: 10px 30px;
+    margin: 10px 17px;
+    height: 20rem;
   }
 }
 .card__picture {
@@ -177,22 +178,30 @@ button:hover {
   position: relative;
 }
 
+.menu__validation {
+  width: 0;
+  background-color: #99E2D0;
+}
+.menu__validation span {
+  padding: 1.5rem;
+  color: white;
+  font-size: 2rem;
+  transform: rotate(0turn);
+  transition: transform 0.5s;
+}
+
 .menu__card:hover {
   cursor: pointer;
 }
+.menu__card:hover .menu__card__block {
+  width: 80%;
+}
 .menu__card:hover .menu__validation {
-  display: initial;
-  transition: transform 5000ms ease-in-out;
-  background-color: #99E2D0;
-  padding: 30px;
-  border-top-right-radius: inherit;
-  border-bottom-right-radius: inherit;
+  width: 20%;
+  transition: width 0.5s;
 }
 .menu__card:hover .menu__validation span {
-  color: white;
-  font-size: 25px;
-  transform: rotate(360deg);
-  transition: transform 5000ms ease-in-out;
+  transform: rotate(-1turn);
 }
 
 .header__logo {
@@ -308,7 +317,7 @@ footer .footer__icon {
   border-radius: 25px;
   padding: 10px;
   margin: 2rem 1rem;
-  box-shadow: 0 5px 9px gray;
+  box-shadow: 0 5px 9px rgb(204, 204, 204);
 }
 @media screen and (min-width: 992px) {
   .function__button {
@@ -375,17 +384,23 @@ footer .footer__icon {
   align-items: flex-end;
   background-color: #fff;
   border-radius: 25px;
-  box-shadow: 0 5px 9px gray;
+  box-shadow: 0 5px 9px rgb(204, 204, 204);
   margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu__card__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 0 2rem;
 }
 .menu__text {
-  padding-left: 25px;
-}
-.menu__price {
-  padding-right: 40px;
-}
-.menu__validation {
-  display: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__btn {
   flex-direction: column;
