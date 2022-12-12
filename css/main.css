@@ -138,7 +138,7 @@ button:hover {
   width: 90%;
   background-color: #fff;
   border-radius: 25px;
-  box-shadow: 0 0 10px gray;
+  box-shadow: 0 5px 9px gray;
   height: 20rem;
   margin: 15px 0;
 }
@@ -305,6 +305,7 @@ footer .footer__icon {
   border-radius: 25px;
   padding: 10px;
   margin: 2rem 1rem;
+  box-shadow: 0 5px 9px gray;
 }
 @media screen and (min-width: 992px) {
   .function__button {
@@ -335,6 +336,7 @@ footer .footer__icon {
   z-index: -1;
   object-fit: cover;
   width: 100%;
+  height: 100%;
   top: 70px;
 }
 .menu__wrapper {

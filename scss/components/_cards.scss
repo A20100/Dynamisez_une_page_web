@@ -11,7 +11,7 @@
     width: 90%;
     background-color: $color-bg1;
     border-radius: $border-radius;
-    box-shadow: 0 0 10px gray;
+    box-shadow: $box-shadow;
     height: 20rem;
     margin: 15px 0;
     @include desktop-only {
