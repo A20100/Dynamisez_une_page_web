@@ -169,7 +169,7 @@ button:hover {
   color: white;
   font-size: 2rem;
   transform: rotate(0turn);
-  transition: transform 0.5s;
+  transition: transform 0.7s;
 }
 
 .menu__card:hover {
@@ -325,6 +325,27 @@ footer .footer__icon {
   color: #8c8c8c;
 }
 
+@-webkit-keyframes loading-cards {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+}
+
+@keyframes loading-cards {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+}
 .menu__container img {
   position: absolute;
   z-index: -1;
@@ -369,6 +390,12 @@ footer .footer__icon {
   box-shadow: 0 5px 9px rgb(204, 204, 204);
   margin-bottom: 20px;
   overflow: hidden;
+  -webkit-animation-name: loading-cards;
+          animation-name: loading-cards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
 }
 .menu__card__block {
   display: flex;
@@ -423,11 +450,13 @@ footer .footer__icon {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 25px;
   }
 }
 @media screen and (min-width: 768px) {
   .menu__category {
     display: flex;
     flex-direction: column;
+    width: 32%;
   }
 }/*# sourceMappingURL=main.css.map */
