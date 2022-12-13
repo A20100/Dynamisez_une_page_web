@@ -75,11 +75,16 @@ button.btn {
   border-radius: 25px;
   color: #fff;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 0 5px 9px rgb(204, 204, 204);
 }
 
 button:hover {
-  transform: scale(1.01);
   cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.85;
+  box-shadow: 0 5px 9px #4c4c4c;
 }
 
 .fa-heart {
@@ -93,28 +98,6 @@ button:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 0;
-}
-
-.heart {
-  position: absolute;
-  top: 30%;
-  right: 3rem;
-  text-align: center;
-  color: #656565;
-}
-.heart__bg {
-  font-size: 4.5rem;
-  padding-top: 1.2rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: opacity 250ms;
 }
 
 #restaurants {
@@ -382,7 +365,6 @@ footer .footer__icon {
   border-radius: 25px;
   box-shadow: 0 5px 9px rgb(204, 204, 204);
   margin-bottom: 20px;
-  white-space: nowrap;
   overflow: hidden;
 }
 .menu__card__block {
@@ -392,10 +374,11 @@ footer .footer__icon {
   align-items: flex-end;
   width: 100%;
   padding: 0 2rem;
+  overflow: hidden;
 }
 .menu__text {
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .menu__btn {
