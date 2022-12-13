@@ -1,3 +1,15 @@
+@keyframes loading-cards {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(30px);
+        opacity: 1;
+    }
+}
+
 .menu {
     &__container img {
         position: absolute;
@@ -37,6 +49,10 @@
         box-shadow: $box-shadow;
         margin-bottom: 20px;
         overflow: hidden;
+        animation-name: loading-cards;
+        animation-fill-mode: forwards;
+        animation-duration: 1000ms;
+
         &__block {
             @include flex-menu;
             width: 100%;
@@ -57,6 +73,7 @@
         }
     }
 }
+
 @include tablet-only {
     .menu {
         &__title {
@@ -69,10 +86,12 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            margin-bottom: 25px;
         }
         &__category {
             display: flex;
             flex-direction: column;
+            width: 32%;
         }
     }
 }
