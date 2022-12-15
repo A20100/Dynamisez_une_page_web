@@ -1,20 +1,21 @@
 @keyframes loader {
-    0% {
-        background: white;
+   to {
         opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-        background: none;
+        z-index: -100;
     }
 
 }
 
 .loading {
+    @include flex;
     animation-name: loader;
-    animation-duration: 15s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);;
     inset: 0;
+    z-index: 1;
     position: fixed;
+    &__text {
+        position: absolute;
+    }
 }
