@@ -45,7 +45,7 @@ main h2 {
     line-height: 20px;
     padding: 0;
     h3, p {
-        margin: 15px 0;
+        margin: 10px 0;
     }
 }
 
@@ -62,7 +62,7 @@ button {
 }
 
 @include desktop-only {
-    .card h3, .card p {
+    .card__text h3, .card__text p {
         line-height: 20px;
         margin: 10px 0;
     }

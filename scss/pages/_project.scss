@@ -57,6 +57,9 @@
         color: $color-text2;
         padding: 6px 12px;
         margin: 0 15px 0 -35px;
+        @include desktop-only {
+            margin-left: -20px;
+        }
     }
 }
 

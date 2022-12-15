@@ -58,7 +58,7 @@ main h2 {
   padding: 0;
 }
 .menu__text h3, .menu__text p {
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .menu__price {
@@ -74,7 +74,7 @@ button {
 }
 
 @media screen and (min-width: 992px) {
-  .card h3, .card p {
+  .card__text h3, .card__text p {
     line-height: 20px;
     margin: 10px 0;
   }
@@ -214,9 +214,9 @@ button:hover {
   background-color: #99E2D0;
 }
 .menu__validation span {
-  padding: 2.1rem;
+  padding: 1.8rem;
   color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
   transform: rotate(0turn);
   transition: transform 0.7s;
 }
@@ -367,6 +367,11 @@ footer .footer__icon {
   color: #fff;
   padding: 6px 12px;
   margin: 0 15px 0 -35px;
+}
+@media screen and (min-width: 992px) {
+  .function__number {
+    margin-left: -20px;
+  }
 }
 
 .i-bg {
