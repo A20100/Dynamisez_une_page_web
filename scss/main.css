@@ -79,6 +79,37 @@ button {
     margin: 10px 0;
   }
 }
+@-webkit-keyframes loader {
+  0% {
+    background: white;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background: none;
+  }
+}
+@keyframes loader {
+  0% {
+    background: white;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background: none;
+  }
+}
+.loading {
+  -webkit-animation-name: loader;
+          animation-name: loader;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  inset: 0;
+  position: fixed;
+}
+
 button {
   border: none;
 }

@@ -79,6 +79,24 @@ button {
     margin: 10px 0;
   }
 }
+@keyframes loader {
+  0% {
+    background: white;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background: none;
+  }
+}
+.loading {
+  animation-name: loader;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  inset: 0;
+  position: fixed;
+}
+
 button {
   border: none;
 }
