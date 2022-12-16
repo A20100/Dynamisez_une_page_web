@@ -91,6 +91,40 @@ button {
     z-index: -100;
   }
 }
+@-webkit-keyframes loading-bar {
+  0% {
+    width: 0%;
+  }
+  20% {
+    width: 10%;
+  }
+  50% {
+    width: 40%;
+  }
+  70% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes loading-bar {
+  0% {
+    width: 0%;
+  }
+  20% {
+    width: 10%;
+  }
+  50% {
+    width: 40%;
+  }
+  70% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .loading {
   flex-direction: column;
   display: flex;
@@ -111,6 +145,23 @@ button {
   .loading {
     flex-direction: row;
   }
+}
+.loading__bar {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+}
+.loading__bar--progress {
+  -webkit-animation: loading-bar;
+          animation: loading-bar;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  background-color: #fff;
+  position: absolute;
+  padding: 4px;
 }
 .loading__text {
   position: absolute;
@@ -449,10 +500,10 @@ footer .footer__icon {
   overflow: hidden;
   -webkit-animation-name: loading-cards;
           animation-name: loading-cards;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
 }
 .menu__card__block {
   display: flex;

@@ -53,8 +53,8 @@
         margin: -30px 0 50px;
         overflow: hidden;
         animation-name: loading-cards;
-        animation-fill-mode: forwards;
-        animation-duration: 1000ms;
+        animation-fill-mode: both;
+        animation-duration: 1500ms;
 
         &__block {
             @include flex-menu;
