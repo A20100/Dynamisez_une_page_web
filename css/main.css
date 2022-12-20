@@ -426,7 +426,7 @@ footer .footer__icon {
   align-items: flex-end;
   align-items: center;
 }
-.menu__title button {
+.menu__title span {
   padding-right: 30px;
 }
 .menu__organizer h2 {
@@ -493,6 +493,7 @@ footer .footer__icon {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 992px) {
@@ -501,8 +502,8 @@ footer .footer__icon {
   }
 }
 @media screen and (min-width: 768px) {
-  .menu__title button {
-    padding-left: 50px;
+  .menu__title span {
+    padding-left: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -518,6 +519,11 @@ footer .footer__icon {
     display: flex;
     flex-direction: column;
     width: 32%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu__title span {
+    padding-left: 50px;
   }
 }
 

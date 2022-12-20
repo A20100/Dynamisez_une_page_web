@@ -31,7 +31,7 @@
     &__title {
         @include flex-menu;
         align-items: center;
-        button {
+        span {
             padding-right: 30px;
         }
     }
@@ -85,8 +85,9 @@
     .menu {
         &__title {
             @include flex;
-            button {
-                padding-left: 50px;
+            flex-direction: row;
+            span {
+                padding-left: 30px;
             }
         }
         &__organizer {
@@ -100,5 +101,11 @@
             flex-direction: column;
             width: 32%;
         }
+    }
+}
+
+@include desktop-only { 
+    .menu__title span {
+        padding-left: 50px;
     }
 }
