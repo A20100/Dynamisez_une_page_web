@@ -162,6 +162,7 @@ button:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 0;
+  cursor: pointer;
 }
 
 #restaurants {
