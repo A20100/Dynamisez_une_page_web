@@ -528,7 +528,7 @@ footer .footer__icon {
   .menu__category {
     display: flex;
     flex-direction: column;
-    width: 32%;
+    width: 30%;
   }
 }
 @media screen and (min-width: 992px) {
