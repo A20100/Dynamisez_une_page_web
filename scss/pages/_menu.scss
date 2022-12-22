@@ -1,11 +1,11 @@
 @keyframes loading-cards {
     0% {
-        transform: translateY(0);
+        transform: translateY(30px);
         opacity: 0;
     }
 
     100% {
-        transform: translateY(30px);
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -36,14 +36,11 @@
         }
     }
     &__organizer h2 {
-        padding: 15px 0;
+        padding: 15px 0 40px;
         > span {
             padding: 5px 0;
             border-bottom: solid 3px $color-tertiary;
         }
-    }
-    &__category {
-        padding-bottom: 15px;
     }
     &__card {
         @include flex-menu;
@@ -54,7 +51,12 @@
         overflow: hidden;
         animation-name: loading-cards;
         animation-fill-mode: both;
-        animation-duration: 1500ms;
+        animation-duration: 1200ms;
+        @for $i from 2 to 6 {
+            &:nth-child(#{$i}) {
+                animation-delay: 250ms * ($i - 1) ;
+            }
+        }
 
         &__block {
             @include flex-menu;
